@@ -51,7 +51,7 @@ body:
   - type: checkboxes
     id: epic-membership
     attributes:
-      label: Membership of ePIC collaboration
+      label: Membership of ePIC Collaboration
       description: |
         Membership in the ePIC teams on GitHub is limited to persons affiliated with an institution in the
         ePIC Collaboration.
