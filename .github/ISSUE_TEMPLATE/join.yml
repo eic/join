@@ -1,13 +1,24 @@
 name: Join the EIC organization
 description: Provide the required information to join.
+assignees: eic/admin
+label: join
+title: New user request: <!-- add your GitHub username here -->
 body:
   - type: markdown
     attributes:
-      value: Thank you for your interest in joining the EIC organization on GitHub. Please provide the information below so we can assess your request.
+      value: |
+        Thank you for your interest in joining the EIC organization on GitHub. Please provide the
+        information below so we can act on your request.
   - type: input
     id: username
     attributes:
       label: GitHub username
+    validations:
+      required: true
+  - type: input
+    id: fullname
+    attributes:
+      label: Full name
     validations:
       required: true
   - type: input
@@ -17,14 +28,35 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: eicug-membership
+    id: profile
     attributes:
-      label: Check duplicate issues.
-      description: Membership in the EIC organization is limited to persons affiliated with an insitution in the EIC User Group (EICUG). Membership are listed at https://phonebook.sdcc.bnl.gov/eic/client/.
+      label: GitHub user profile
+      description: |
+        For identification purposes, your GitHub user profile must contain your full name and affiliation.
       options:
-        - label: I am a member or my supervisor is a member of the EICUG.
+        - label: My GitHub user profile contains my full name and affiliation.
     validations:
       required: true
+  - type: checkboxes
+    id: eicug-membership
+    attributes:
+      label: Membership of EIC User Group
+      description: |
+        Membership in the EIC organization on GitHub is limited to persons affiliated with an institution
+        in the EIC User Group (EICUG). Memberships are listed at https://phonebook.sdcc.bnl.gov/eic/client/.
+      options:
+        - label: I am a member or my supervisor is a member of the EIC User Group.
+    validations:
+      required: true
+  - type: checkboxes
+    id: epic-membership
+    attributes:
+      label: Membership of ePIC collaboration
+      description: |
+        Membership in the ePIC teams on GitHub is limited to persons affiliated with an institution in the
+        ePIC Collaboration.
+      options:
+        - label: I am a member or my supervisor is a member of the ePIC Collaboration.
   - type: textarea
     id: additional-information
     attributes:
