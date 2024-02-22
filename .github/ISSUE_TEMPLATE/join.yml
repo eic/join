@@ -1,6 +1,6 @@
 name: Join the EIC organization
 description: Provide the required information to join.
-assignees: eic/admin
+assignees: 'eic/admins'
 labels: join
 title: 'New user request: <!-- add your GitHub username here -->'
 body:
