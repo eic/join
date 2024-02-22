@@ -1,2 +1,3 @@
-# join
-Issue-only repository for requests to join
+# Join the EIC organization
+
+To join the EIC organization, please file an issue on this repository.
