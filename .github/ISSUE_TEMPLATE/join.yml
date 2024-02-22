@@ -35,8 +35,7 @@ body:
         For identification purposes, your GitHub user profile must contain your full name and affiliation.
       options:
         - label: My GitHub user profile contains my full name and affiliation.
-    validations:
-      required: true
+          required: true
   - type: checkboxes
     id: eicug-membership
     attributes:
@@ -46,8 +45,7 @@ body:
         in the EIC User Group (EICUG). Memberships are listed at https://phonebook.sdcc.bnl.gov/eic/client/.
       options:
         - label: I am a member or my supervisor is a member of the EIC User Group.
-    validations:
-      required: true
+          required: true
   - type: checkboxes
     id: epic-membership
     attributes:
@@ -57,6 +55,7 @@ body:
         ePIC Collaboration.
       options:
         - label: I am a member or my supervisor is a member of the ePIC Collaboration.
+          required: false
   - type: textarea
     id: additional-information
     attributes:
